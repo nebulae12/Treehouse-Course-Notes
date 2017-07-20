@@ -1,0 +1,60 @@
+Course: HTML Tables
+help: mdn
+
+Achievement: Table Basics
+  Overview of Tables
+  Create a Basic Table
+    table attributes have been deprecated.
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>E-mail</td>
+        <td>Job role</td>
+      </tr>
+      <tr>
+        <td>Nick Pettit</td>
+        <td>nick@example.com</td>
+        <td>Web Designer</td>
+      </tr>
+    </table>
+  The Table Header Cell Element
+    header - <th> instead of <td>
+    scope="col" or "row"
+
+    <table>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Job role</th>
+      </tr>
+      <tr>
+        <th scope="row">Nick Pettit</th>
+        <td>nick@example.com</td>
+        <td>Web Designer</td>
+      </tr>
+    </table>
+
+Achievement: Structuring Tables
+  The Table Head and Body Elements
+    <thead> for the first row. wraps the first row.
+    different from <th> cell element!
+    <tbody> for the rest. wraps the rest.
+  The Table Foot Element
+    place the tfoot element BETWEEN the thead and tbody elts
+    if want footer to not push width of single col, use colspan to span the width of all cols in the table.
+    <tfoot>
+      <tr>
+        <td colspan="3">Data is updated every 15 minutes.</td>
+      </tr>
+    </tfoot>
+  The Caption Element
+    caption right after opening table tag
+      <table>
+        <caption>Employee Information</caption>
+        .
+        .
+        .
+      </table>
+  More Table Tips
+    add jQuery to sort and filter an otherwise static table
+    if backend, Ruby Python or PHP, populate the table dynamically from database

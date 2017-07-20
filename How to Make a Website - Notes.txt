@@ -1,0 +1,54 @@
+Website Testing
+	Photoshop
+		- No saturation (bw check)
+		- 180 flip (composition check)
+		- 4.0 blur (color composition check)
+		- 1.5 blur (legibility check - accessibility)
+		
+	HTML validate (W3C)
+	
+	CSS validate (W3C)
+	
+	Device check
+		- actual devices
+		- screenshot services
+			browserstack.com
+			
+Sharing a Website
+	Find a Domain
+		http://   } Protocol
+		www		} Subdomain
+		.example	} Domain
+		.com	} TLD
+		
+		registrar, like godaddy or namecheap
+		
+	Pick a Web Host
+		need a server, or web host
+		DNS: domain name server. put it in your domain manager.
+		
+Upload the Website
+	sftp SSH or secure file transfer protocol
+	cyberduck?
+	
+Use Developer Tools
+	recommend Google Chrome dev tools
+	have to use on desktop
+	inspect element
+	hover over code to highlight elements on the page
+	elements and style panes
+	
+How to Solve Problems with Code
+	check syntax!
+	close quotes, etc.
+	check nesting
+	check semicolons!
+	id (#) and class (.) selectors!
+	positioning problems - float, clear, position
+	reference: www.w3.org/TR/CSS2/visuren.html
+	
+Continue Learning
+	w3c
+	dribbble
+	codepen
+	twitter

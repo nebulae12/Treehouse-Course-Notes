@@ -1,0 +1,79 @@
+Course: GitHub Basics
+mastering markdown (guides.github.com)
+
+Achievement: Hello, GitHub!
+  Introduction to GitHub
+    Git is a VCS
+    GitHub is a place on the internet where projects are stored and collaborated on
+  Sign Me Up!
+  Search and Explore
+    repository
+  Social Coding
+  Create a Repository
+
+Achievement: Working By Yourself
+  Push Your Project to GitHub
+    git --version
+    git config --list
+    git config --global user.name "Alyson La"
+    git config --global user.email "alyson+real@alysonla.com"
+    mkdir foldernamehere
+    cd foldernamehere
+    git init
+    git status
+    git add .
+    git commit -m "initial commit"
+
+    copy from GitHub repo:
+
+    git remote add origin...
+
+    now push!
+    git push origin master
+
+    ok the 4 to remember:
+    1 >> git init
+    2 >> git status
+    3 >> git add .
+    4 >> git push origin master
+
+    git init: initialize a git repository in your directory
+    git status: check the status of the repository
+    git add file_name: add one file
+    git add .: add all files
+    git commit -m “commit message”: commit your files along with a message
+    git remote add origin https://github.com/username/reponame.git - the remote url to your GitHub repo
+    git push origin master: push your files up to github on the master branch
+
+  Using Issues
+    issues for things to be done
+    from creating a README to completing Python courses on Treehouse
+  Mastering Markdown
+    style/format text
+    open and close issues
+  Create a Branch
+    git branch add-readme
+    git checkout add-readme
+    shortcut: git checkout -b
+  Open a Pull Request
+
+  Conflict Resolution
+
+Achievement: Working on a Team
+  Creating an Organization
+  Creating a Team
+  Creating a Repository in your Organization
+  Open a Pull Request for Your Team to Review
+  Workflow Demonstration
+
+Achievement: Create a Web Presence on GitHub
+  Introduction to GitHub Pages
+  Create a Personal Website
+  Create a Project Website
+
+Achievement: Get Involved in Open Source
+  Introduction to Open Source
+  how to Find an Open Source Project
+  Contributing to a Project with an Issue
+  Creating Your Own Fork of an Open-Source Repository
+  Contributing to a Project with a Pull Request

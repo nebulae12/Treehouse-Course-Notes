@@ -1,0 +1,143 @@
+Course: CSS Flexbox Layout
+
+Achievement: Understanding Flexbox
+	Introducing Flexbox
+	 	Flexbox: flexible box layout
+	Flexbox Basics and Terminology
+		Flex container first
+		Flex items are direct children of the flex container element
+		Main axis is the primary direction: left to right (or vice versa) if a two column layout
+		Cross axis is the perpendicular to main: up-down for a column
+		Axis start and end
+	Creating a Flex Container
+		display: flex;
+		flex items appear side by side and take up the full height of the flex container
+		display: inline-flex;
+		the flex container does NOT take up the full width
+
+Achievement: Flexbox Properties
+	Controlling the Direction of Flex Items
+		flex-direction: row, row-reverse, column, column-reverse
+	Wrapping Flex Items
+		flex-line even if it causes overflow
+		flex-wrap: wrap;
+		flex-wrap only works on containers, not items
+	Distributing Space Inside a Flex Container
+		justify-content: default is flex-start
+		flex-end is end-justified with lots of space at the start
+		space-between evenly distributes items between the start and end with no padding between the start and first item or the end and last item
+		space-around adds exactly half the space between each item to the between the start and first and the last and end
+		setting margins of items will affect flex layout
+		for ex margin: auto for a item will absorb all extra space not taken by items ie push the other items away
+	Changing the Order of Flex Items
+		order: default is 0 (zero)
+		order items by changing their order number, where if an item's order is not specified, it is zero. (check the main axis and flex-direction prop)
+		SEO source order dependence?
+	Growing Flex Items
+		flex-grow: default is 0 (zero)
+		this is property for items!
+		the number is how its grows relative to its siblings (on the same line)
+		flex-grow: 1 causes all items to grow together equally so they collectively fill the line
+		when the container width is too small for all flex items to display on the same line, and they start to wrap, the items that spill over first will collectively take the full width of the container.
+		now if items have different numbers, they will grow at that number rate compared to each other.
+		flex-grow has no effect on containers!
+	Smarter Layouts with flex-basis and flex
+		flex-basis: 200px; /* sets the default width so if an item has this width or greater, it will stay on the same line. After, items start to overflow */
+		flex: flex-grow flex-basis flex-shrink
+	Aligning Flex Items on the Cross Axis
+		align-items: works on container only. default is stretch (from start to end of main axis)
+		align-items: stretch, flex-start, flex-end, center
+		for items: align-self (overrides container align-items)
+	CHALLENGE: Growing and Aligning Flex Items
+	/* Complete the challenge by writing CSS below */
+		.row {
+		display: flex;
+		align-items: center; /* container property to align items along the cross axis, ie vertically centered here */
+		}
+
+		.column {
+		flex-grow: 1; /* item property which causes all items to grow equally and collectively fill the container main axis from start to end, ie columns expand horizontally to fill the row here */
+		}
+
+		.primary {
+		flex-grow: 2; /* this particular item will grow at twice the rate of items whose flex-grow value is 1, ie this primary column will be twice as wide as other columns whose values are all one here */
+		}
+	Vertical and Horizontal Centering
+		centering is hard! floats, etc
+		justify, align
+		3 ways:
+			.container {
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container {
+				justify-content: center;
+			}
+			.item {
+				align-self: center;
+			}
+
+			.item {
+				margin: auto;
+			}
+
+Achievement: Building a Layout with Flexbox
+	Building a Navigation Bar with Flexbox
+		source order independence
+		.main-nav and .main-header are both display: flex
+		flex items can themselves be flex containers, so their children will be flex items as well
+		use media queries to
+	Creating a Two Column Layout with Flexbox
+		primary and secondary are div's inside a row class
+		make row a flex container
+		primary will be twice secondary (two columns)
+		pri and sec are also both col classes
+		.col {
+			flex: 1; /* flex-grow flex-basis flex-shrink */
+		}
+		.primary {
+			flex: 2;
+		}
+	Creating a Three Column Layout with Flexbox
+		added a div with classes "tertiary col"
+		want:
+		on narrowest, one col
+		on screens >= 769px, two equal cols with third on next line
+		on screens >= 1025px, three cols with pri twice the others and the middle
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.col {
+			flex: 1 50%;
+		}
+		.secondary {
+			order: -1;
+		}
+
+		.col {
+			flex-basis: 0;
+		}
+		.primary {
+			flex-grow: 1.4;
+		}
+	Aligning Items to the Bottom of a Column
+		now the cols have a title, paragraph and learn more button
+		want the buttons aligned at the bottom of each col and not take up width of col
+		make col a flex display
+		and flex-direction: column so the title para and button aren't in a row
+		.button {
+			margin-top: auto; /* browser pushes away flex items on top of the button in the column (the flex containter) */
+			align-self: flex-end; /* item property that puts item at end of the cross axis, ie aligns button on the far right in the col here, and already pushed to bottom so it's the bottom right */
+		}
+	Creating a Sticky Footer with Flexbox
+		get rid of gap between footer and bottom of viewport
+		make body a flex container
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+		.row {
+			flex: 1; /* or flex-grow. now the row(s) fills all vertical space between the header and the footer */
+		}

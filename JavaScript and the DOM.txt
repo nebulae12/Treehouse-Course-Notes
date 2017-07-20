@@ -1,0 +1,194 @@
+Course: JavaScript and the DOM
+help: open Developer Tools in the browser, mdn
+
+Achievement: The Browser Environment
+  Welcome and Overview
+    Selecting
+    Manipulating
+    Listening for user actions
+    Document Object Model
+  Thinking Globally
+    Chrome >> upper right 3 dots >> More Tools >> Developer Tools
+    tabs Console
+    window is the global object for browsers
+    type window in console for window properties (global properties)
+    document object.
+  What is the DOM
+    Document Object Model
+    a tree of least to most nested elements (html tags)
+  Recap
+    global scope - window
+    document - global property of window
+    DOM - something that JS can use
+    Select, read or change, listen for user actions
+
+Achievement: Getting a Handle on the DOM
+  A Simple Example
+    <script src="app.js"></script> before </body>
+
+    app.js
+
+    const myHeading = document.getElementById('myHeading');
+
+    //when heading clicked, heading turns red
+    myHeading.addEventListener('click', () => {
+      myHeading.style.color = 'red';
+    });
+
+  Select a Page Element By Its ID
+    use a button to make the heading red!
+
+    app.js
+
+    const myHeading = document.getElementById('myHeading');
+    const myButton = document.getElementById('myButton');
+
+    //Now when button clicked, heading turns red
+    myButton.addEventListener('click', () => {
+      myHeading.style.color = 'red';
+    });
+
+    use input to change the heading color!
+
+    app.js
+
+    const myHeading = document.getElementById('myHeading');
+    const myButton = document.getElementById('myButton');
+    const myTextInput = document.getElementById('myTextInput');
+
+    //Now when button clicked, heading turns red
+    myButton.addEventListener('click', () => {
+      myHeading.style.color = myTextInput.value;
+    });
+
+  Select All Elements of a Particular Type
+    document.getElementsByTagName();
+    for (i = 0; i < myList.length; i += 1) {
+      myList[i].style.color = 'purple';
+    }
+  Selecting Elements with the Same Class Name
+    document.getElementsByClassName();
+  Using CSS Queries to Select Page Elements
+    document.querySelector();
+    document.querySelectorAll();
+  Learning More
+    browser support
+    mdn
+
+Achievement: Making Changes to the DOM
+  Getting and Setting Text with textContent and innerHTML
+    p.textContent
+    p.innerHTML - everything between an element's opening and closing tags
+  Changing Element Attributes
+  Styling Elements
+    setters, not getters
+    bc they only would return inline styles, not external stylesheets or styles elsewhere
+  Creating New DOM Elements
+    document.createElement('div');
+  Appending Nodes
+    node.appendChild(childElement);
+
+    ul = ;
+    li = ;
+    ul.appendChild(li);
+  Removing Nodes
+    node.removeChild(childElement);
+
+    ul = ;
+    li = document.querySelector("li:last-child");
+    ul.removeChild(li);
+
+Achievement: Responding to User Interaction
+  What is an Event?
+    click, mousedown, mousemove, mouseup, mouseout, etc
+    thousands happen. use JS to listen for and bind responses to events
+  Functions as Parameters
+    can pass named or anonymous functions into other functions
+  Delaying Executing with setTimeout()
+    passing functions as parameters - more control over when and how the function executes
+    window.setTimeout( (something) => {
+      console.log(something);
+    }, 3000, 'Greetings, everyone!');
+  Listening for Events with addEventListener()
+    const listItems = document.getElementsByTagName('li');
+
+    for (let i=0; i < listItems.length; i += 1 ) {
+      listItems[i].addEventListener('mouseover', () => {
+        listItems[i].textContent = listItems[i].textContent.toUpperCase();
+      });
+      listItems[i].addEventListener('mouseout', () => {
+        listItems[i].textContent = listItems[i].textContent.toLowerCase();
+      });
+    }
+    Event Bubbling and Delegation
+
+  The Event Object
+    > bubbling refers to when elements receive events, like clicks, all their ancestor elements in the DOM (the tree) receives the same event. ie an li element receives a click, that means the ul that parents the li as well as the body and eventually the document have received a click.
+    > use bubbling to efficiently code
+    > target a parent rather than loop through the children
+    > also target elements that are unlikely to be removed from the DOM (like body), while being as close as possible to the elements actually being manipulated (not like body)
+    > the callback function that is passed to addEventListener is called the event handler
+
+    const listDiv = document.getElementsByTagName('div');
+
+    listDiv.addEventListener('mouseover', (event) => {
+      if (event.target.tagName == 'LI') {
+        event.target.textContent = event.target.textContent.toUpperCase();
+      }
+    });
+    listDiv.addEventListener('mouseout', (event) => {
+      if (event.target.tagName == 'LI') {
+        event.target.textContent = event.target.textContent.toLowerCase();
+      }
+    });
+
+Achievement:  Traversing the DOM
+  Using parentNode to Traverse Up the DOM
+    listDiv.addEventListener('mouseover', (event) => {
+      if (event.target.tagName == 'LI') {
+        let li = event.target;
+        let ul = li.parentNode;
+        ul.removeChild(li);
+      }
+    })
+  Using previousElementSibling and insertBefore
+    previousElementSibling guarantees you get an HTML element
+    previousSibling does not
+    listDiv.addEventListener('mouseover', (event) => {
+      if (event.target.tagName == 'LI') {
+        let li = event.target;
+        let ul = li.parentNode;
+        ul.removeChild(li);
+      }
+      if (event.target.className == 'up') {
+        let li = event.target.parentNode;
+        let prevLi = li.previousElementSibling;
+        let ul = li.parentNode;
+        if (prevLi) {
+          ul.insertBefore(li, prevLi);
+        }
+      }
+    })
+
+  Getting All Children of a Node with children
+    function attachListItemButtons(li) {
+      let up = document.createElement('button');
+      up.className = 'up';
+      up.textContent = 'Up';
+      li.appendChild(up);
+
+      let down = document.createElement('button');
+      down.className = 'down';
+      down.textContent = 'Down';
+      li.appendChild(down);
+
+      let remove = document.createElement('button');
+      remove.className = 'remove';
+      remove.textContent = 'Remove';
+      li.appendChild(remove);
+    }
+
+  Getting the First and Last Child
+    ParentNode.firstElementChild
+    ParentNode.lastElementChild
+    ParentNode.children

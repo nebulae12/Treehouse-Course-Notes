@@ -1,0 +1,207 @@
+Course: CSS Basics
+
+Achievement: Getting Started with CSS
+	CSS Basics Overview
+	Introduction to CSS
+		3 layers: content, presentation, behavior (HTML, CSS, Javascript)
+		CSS now does things that only graphics editors used to do!
+	CSS Resources
+		mdn docs (mozilla developer network)
+		webplatform docs (docs.webplatform.org)
+		w3c (www consortium)
+		caniuse.com (browser support)
+	Intro to CSS Review
+		3 ways to do author styles: inline, internal style sheet, external style sheet
+	Inline and Internal Styles
+		inline: css attributes (style) added to html tags
+		internal style: css right inside the head section using <style>
+	External Style Sheets
+		<link rel="" href=""></link>
+		@import "css/import-styles.css"
+		keep @import statement in the beginning, of either the head section or the linked stylesheet
+	Adding CSS Review
+
+Achievement: Basic Selectors
+	Intro to Selectors
+		flow: rule, selector, declaration block, declaration, property, value
+		universal selector *
+	Type Selectors
+		also called element selector
+		HTML tag
+	ID Selectors
+		#[id here]
+		have to assign id to HTML elements.
+		id names are made up!
+		eg: #top, next section, previous section.
+	Class Selectors
+		.[class here]
+		class attributes - more than one element, where id's are attached to one element only.
+		multiple elements share one class attribute!
+	Reusing Classes
+		elements can have multiple classes
+		classes can be attached to multiple elements
+		helps with writing less CSS code
+		want to make sure elements in different id's or classes don't share the same properties
+	Descendant Selectors
+		nested elements are descendents
+		selector is elements in order with spaces in between
+	Pseudo-Classes
+		[selector]:[pseudo-class]
+		eg: (not only for links a:!) :hover, :visited, :active, :focus
+	CSS Comments
+		/*  */
+	Basic Selectors Review
+
+
+Achievement: Understanding Values and Units
+	Common Data Types
+		MDN - CSS Data Types
+	Pixel Units
+		MDN - <length>
+		relative vs absolute
+		6 absolute units: px, mm, cm, in, pt, pc
+	Percentages
+		relative to standard width of container or font, etc
+	Em Units
+		is a relative unit.
+		Calculated based on parent element's font size.
+	Rem Units
+		is a relative unit.
+		"root"-em
+		root font size of a page, not the parent element.
+		compounding doesn't happen; if parent element font size changed, no effect on child element font size.
+	Colors Values
+		MDN: <color>
+	Text Styles
+		text-transform (uppercase, etc)
+		text-decoration (underline, etc)
+		font-weight (bold, etc)
+	Font Properties
+		font-family (sans/serif, Verdana, etc)
+		font stacks! (cycle through until find a font that is installed)
+		cssfontstack.com
+		font-style (normal, oblique, etc)
+	Line Height
+		line-height (unitless numbers, units, percentages, r/em units)
+		font: style size family;
+	Fonts and Line Height Review
+
+
+Achievement: The Box Model
+	The CSS Box Model
+		block and inline elements
+		box 4 parts: content, padding (inside box), border, margin (outside box)
+	Padding
+		-top, -right, -bottom, -left
+		or just padding: all;
+		padding: topbottom leftright;
+		padding: top right bottom left;
+		padding: % of width (not height)
+	Borders
+		border-width
+		border-style
+		border-color
+		if 2 values, topbottom leftright
+		if 4 values, top right bottom left
+		border: width style color;
+		can do all same borders except for one
+		can do just one
+		if no color specified, text color applies
+	Margins
+		auto: equal margins all around that centers the element.
+	Challenge: Padding, Borders, Margins
+	Display Values
+		display (none, block, inline, inline-block)
+		inline-block: flows like inline elements, styled like block elements (margins, etc)
+	The Box Model Review
+
+
+Achievement: Basic Layout
+	Width and Height Properties
+		can we define width and height of box, not just of content?
+	box-sizing and max-width
+		yes we can. this is one thing we can use the universal selector * for.
+		box-sizing: border-box
+		prevent boxes or images from being too wide: max-width
+	Backgrounds: Color and Images
+		properties: 
+		bg img uses url function
+		bg sz 
+		bg repeat default repeats img x and y can specify either or no-repeat
+	Backgrounds: Size and Position
+		properties: background-
+		color
+		image
+		repeat
+		position
+	Floats
+		taken out of normal flow of page and floated to one side of its container
+		collapses the height of the floated element in the parent element
+	Clearing Floats
+		overflow, good for a quick fix and simple layouts
+		reliable method: clearfix
+			.group:after {
+				display: table;
+				clear: both
+			}
+		clear
+ 		:after
+	Lists
+		ol, ul, li elements
+		border, list-style-position (outside or inside), list-style-type, padding-left, margin-left properties
+
+
+Achievement: Designing with the Latest Features
+	Text Shadows
+		text-shadow: x y blur color;
+		x and y can be negative (+ is left bottom)
+		3-d effect using multiple shaddows!
+	Box Shadows
+		box-shadow: inset x y blur color;
+	Border Radius
+		border-radius: topleft topright bottomright bottomleft;
+		border-radius: topleft_bottomright topright_bottomleft;
+		percents can create elliptical edges!
+	Gradients
+		bg img: linear-gradient(to direction or deg, color3, color2) (default direction vertical top to bottom, deg is from bottom ccw)
+		bg img: radial-gradient(circle at somewhere, color1, color2) (color1 is center of circle)
+	Gradients: Color Stops
+		percent tells the position that pure color will show up
+	Transparent Gradients and Multiple Backgrounds
+		transparent as a color stop
+		first is topmost layer
+	Web Fonts with @font-face
+		@font-face {
+			font-family: 'Abolition Regular';
+			src: ...
+			...
+		}
+		.eot Embedded OpenType (IE)
+		.woff Web Open Font Face (by Mozilla for all modern browsers)
+		.ttf TrueType Format (Safari, Android, iOS)
+		letter-spacing
+	Media Queries
+		@media (all OR boolean like max-width: 960px to check viewport of device) {
+			
+		}
+	Adjusting Layout with Media Queries
+		for smaller or narrower screens: reduce padding or margins, reduce font size, change multiple columns or floats to one column or no float
+		in .html:
+		<meta name="viewport" content="width=device-width">
+
+
+Achievement: Fundamental Concepts
+	The Cascade: Importance
+		importance, specificity, source order
+		importance: what file is it from?
+		least to most: user agent, user, imported, author
+	The Cascade: Specificity and Source Order
+		least to most specific: class, id, element, inline
+		source order least to most: typed first to last
+	Inheritance
+		child elements inherit traits of parents
+		use 'initial' to override inheritance
+	Learning Tips and Tools
+		workspaces, CodePen.io
+		ask people!
+

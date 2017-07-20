@@ -1,0 +1,57 @@
+CSS Selectors
+
+Achievement: Selectors - Beyond the Basics
+  Course Overview
+  Attribute Selectors
+    [class] selects every element that has a class attribute!! no matter what the class actually is!
+    [class="form-contact"]
+    form[class="form-contact"]
+    input[type="text"]
+    input[placeholder] vs input[type="email"]
+  Styling Form Buttons and Links with Attribute Selectors
+    input[type="button"],
+    input[type="reset"],...
+    {cursor:pointer}
+    a[target="_blank"] all links that open on a new page, or something
+  Attribute Selectors Challenge
+  DRY CSS
+    Don't Repeat Yourself
+    Define some DRY styles and then apply them to the elements you want in the HTML. Remember elements can have multiple classes. Class is an attribute inside the HTML tag.
+  Child, Adjacent, and General Sibling Combinators
+    > direct child descendants of a thing
+    + all immediately adjacent siblings of an thing
+    ~ all of that things that are general siblings and follow another thing
+  Combinators Challenge
+  Attribute Selectors and Combinators Review
+
+Achievement: Going Further with Attribute Selectors and Pseudo-Classes
+  :first-child and :last-child
+    targets the first and last children of the thing's parent (ie li:first-child targets the first li child of its parent ul)
+  :only-child and :empty
+    :only-child targets all elements that have no siblings, including its children (ie all li children of a ul that has no siblings, or span only children of a li) can also specify certain things that are only children like with li:only-child
+    :empty targets all empty things and for example you may want to use this for testing code and removing empty html tags
+  Substring Matching Attribute Selectors - "Begins with" and "Ends with"
+    a[href^="http:"]
+    a[href$=".pdf"]
+  Substring Matching Attribute Selectors - "Contains"
+    img[src*="preview"]
+  Element States Pseudo-Classes
+    input[type="checkbox"]:checked + label {}
+    Looks for input elements whose type attribute is checkbox and is (pseudo class) checked, and then targets the immediately following sibling labels
+
+Achievement: Advanced Selectors
+  :nth-child
+    eg use an li selector
+    li:nth-child(an+b)
+    if a is 1, can drop it. if b is 0, can drop it. n stays. a can be negative.
+    if just an integer m, this selects every mth thing.
+  :nth-of-type
+    like nth-child except counts only the thing selected, like the 4th div rather than the 4th child no matter what tag/element it is
+  :root and :target
+    :root selects the topmost element on the document
+    :target selects the thing whose id is being referenced in the URL
+  :not() - The Negation Pseudo-Class
+    div:not(#col-a)
+  Pseudo-Elements - ::first-line and ::first-letter
+  Pseudo-Elements - ::before and ::after
+  The attr() CSS Function

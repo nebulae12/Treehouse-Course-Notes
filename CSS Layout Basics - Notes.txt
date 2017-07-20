@@ -1,0 +1,66 @@
+Course: CSS Layout Basics
+
+Achievement: Getting Started with CSS Layout
+	What to Expect
+	CSS Reset with Normalize
+		a stylesheet that levels the playing ground
+	Creating a Layout Wrapper
+		use body or create a div
+	Why Vertical Margins Collapse
+		bc if two collide uninterrupted, both collapse to the larger of the two
+		horizontal margins do NOT collapse
+	Centering Page Content and Creating a Full-width Header
+		three divs: header container or not, main content container, footer maybe no container
+		to replace a wrapper div that contains the whole body
+	Using a Mobile First Approach
+		use @media query to deal with wider and wider screens
+		box-size
+	Creating a Sticky Footer
+		footer sticks to bottom no matter how little content is on the page
+
+Achievement: Controlling Layout with CSS Display Modes
+	Positioning Elements Side-By-Side with Inline Display
+		padding only affects horizontal space of inline elements
+		use inline-block as the display value to get block element styling while keeping elements horizontally next to each other.
+	Removing Gaps Between Inline and Inline-Block Elements
+		negative margin values!
+	The Column Layout Challenge & Solution
+		vertical-align: top
+
+Achievement: Page Layout with the Float Property
+	How Floats Work
+	Wrapping Text Around Images with Floats
+	Creating a Horizontal Navigation with Floats
+	Clearing and Containing Floats
+		overflow: hidden; is an ok fix
+		creating a clearfix is preferred
+	The Float Challenge & Solution
+
+Achievement: CSS Layout Project
+	Introducing the Project
+	Creating and Styling the Layout Containers
+	Adding Media Queries for Large Screens
+	Column Layout with Media Queries
+
+Achievement: Positioning Page Content
+	How Absolute Positioning Works
+		elts unaffected by and do not affect more elts on the page!
+		can determine where exactly on the page you want them... relative to the first parent elt that has position: relative;
+	Positioning Elements Relative to Each Other
+		position: relative;
+		that elt becomes the origin for child elts whose positions are absolute
+	Create an Image Caption with Absolute Positioning
+		make the parent <figure> elt have position: relative;
+		then for a caption on top do .figcaption bottom: 0; width: 100%;
+		for an icon in the left top corner do
+		.locationicon {width: 35px; position: absolute; top: -15px; left: -15px; }
+	Fixed Positioning
+		stays constant relative to the BROWSER WINDOW
+		like a nav bar that doesn't disappear when you scroll on the page
+		a strange phenom: any elt with absolute positioning appears on TOP of fixed position elts!
+	How Z-index Works
+		stacking works: things later in the source code appear on top of things earlier
+		z-index is the "height" or stacking order. Larger means "higher" or stacked on top.
+		Make the fixed header have a super high z-index to make it the top of the stack always.
+
+Complete! 5/14/2017
