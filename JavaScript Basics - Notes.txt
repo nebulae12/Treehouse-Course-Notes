@@ -1,0 +1,69 @@
+Course: JavaScript Basics
+
+Achievement: Introducing JavaScript
+	JavaScript Everywhere
+	About JavaScript Basics
+		syntax
+		basic programming concepts
+		JS is NOT Java
+	Your First JavaScript Program
+		alert("Hello from Treehouse");
+		document.write("<h1>Welcome to JavaScript Basics</h1>");
+		alert("Thanks for visiting.");
+	Where Does JavaScript Go?
+		Content, style, interactivity
+		JS interpreter runs or executes the JS code
+		scripts.js:
+		alert("Hey, you're back for more?");
+		index.html:
+		<script src="scripts.js"></script>
+		OR <script> js here </script>
+		OR two separate script tags
+	The JavaScript Console
+		syntax errors
+		Chrome: ctrl-j, menu -> tools -> JS Console
+
+
+Achievement: Storing and Tracking Information with Variables
+	Introducing Variables
+		var - box
+		name - label on box
+		value - box content
+	Create a Variable
+		avoid names of functions or other JS special words
+		can't start with numbers
+		can't use special characters in certain places
+	Strings and Numbers
+	Spaces, tabs, and new lines in JS
+	Capturing Visitor Input
+	Working with Strings and Finding Help
+		MDN
+		object.property
+		object.method()
+
+
+Achievement: Working with Numbers
+	Numbers
+	Doing Math
+		shorthands; += to update a variable by adding a value and storing it in the same variable
+	Numbers and Strings
+	The Math Object
+		Math.methodname()
+
+
+Achievement: Making Decisions with Conditional Statements
+	Introducing Conditional Statements
+	Booleans
+	Improving the Random Number Guessing Game
+	Document your Code with Comments
+	Combining Multiple Tests into a Single Condition
+
+Achievement: Creating Reusable Code with Functions
+	Introducing Functions
+	Getting Information From a Functions
+		return exits a function
+	Variable Scope
+		variables declared within functions stay within functions
+		don't mess with global variables inside a function, it's bad form
+
+

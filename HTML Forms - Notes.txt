@@ -1,0 +1,40 @@
+Course: HTML Forms
+
+Achievement: Form Basics
+	Overview of Forms
+	The Form Element
+		can't have a form inside a form
+	Create a Form Element
+		attributes include action, method
+		two methods are POST and GET
+	The Input Element
+		self-closing tag
+		attributes: id, type, name
+	The Textarea Element
+		same attributes as input
+		bigger, scrollable, and resizeable in the browser
+	The Button Element
+		remember can't actually submit without backend
+		three types: submit, reset, button
+
+Achievement: Organizing Forms
+	The Label Element
+		label's for attribute matches input's id attribute
+	Fieldsets and Legends
+		fieldset to group certain inputs together
+		legend to create a header for the fieldset inputs - goes inside the fieldset tags
+
+Achievement: Choosing Options
+	Select Menus
+		allow user to select options rather than write in an input (replaces input element)
+		option elements like li elements of an unordered list
+	Radio Buttons
+		preferable when options are few and want to see them all at once rather than in a dropdown
+		input element uses radio type
+		label associated with each radio "button"
+		overall label element has nothing to associate with, so no for
+	Checkboxes
+		input type="checkbox"
+		put label for the checkbox AFTER the input
+	Going further
+		Style the form elements, or make the form actually submit to something!

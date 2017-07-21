@@ -1,0 +1,61 @@
+Course: JavaScript Loops, Arrays and Objects
+
+Achievement: Simplify Repetitive Tasks with Loops
+  Introducing Loops, Arrays and Objects
+  What are Loops?
+    if (BOOLEAN) {
+      ACTION
+    }
+
+    function randomNumber(upper) {
+      return Math.floor( Math.random() * upper ) + 1;
+    }
+    var counter = 0;
+    while ( counter < 10 ) {
+      var randNum = randomNumber(6);
+      document.write(randNum + ' ');
+      counter += 1;
+    }
+  A Closer Look at Loop Conditions
+    endless loop: boolean is always true, loop always runs!
+  Exiting Loops
+    break;
+    while
+    do while
+    for
+  The Refactor Challenge
+    DRY: Don't Repeat Yourself
+    Refactor: improving an existing program
+    Use loops or define functions
+  What is an Array?
+    var shoppingList = [
+      'eggs',
+      'milk',
+      'break'
+    ];
+  Accessing Items in an Array
+    index starts at 0
+  Using Array Indices
+  Adding Data to Arrays
+    [array name].push adds to end
+    [array name].unshift adds to beginning
+  Removing Items from Arrayws
+    Pop takes off where push puts on
+    Shift takes off where unshift puts on
+  Using For Loops with Arrays
+    'iterate' through an array
+    length is the method to get the number of items in the array
+    counter is the index: for(i=0; i<list.length; i+=1)
+  Useful Array Methods
+    .join : adds something in between every element and returns a single string!
+    .concat : adds an array to the end of another array (original arrays are retained)
+    .indexOf : returns index of an item!
+  Two-Dimensional Arrays
+    Thinking of the arrays that are items in the outer array as rows. The number of items in the outer array is the number of rows. The number of items in each item array is the number of columns for that row.
+    outerArray[i][j] : i is the row, j is the column
+
+
+Achievement: Tracking Multiple Items with Arrays
+
+
+Achievement: Tracking Data Using Objects

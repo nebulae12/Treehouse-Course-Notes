@@ -1,0 +1,62 @@
+Javascript Loops, Arrays, and Objects (JS LAO)
+
+Achievement: Simplify Repetitive Tasks with Loops
+  *already completed*
+
+Achievement: Tracking Multiple Items with Arrays
+  *already completed*
+
+Achievement: Tracking Data Using Objects
+  The Object Literal
+    object-oriented programming language
+    add properties to an object, sep by commas, and assigned with :
+    curly braces for an object (this is the object literal)
+    square for an array
+    property: value,
+  Accessing Object Properties
+    person['name'] or person.name
+    dot notation
+    create or rewrite properties
+    person.name = whatever;
+    person.skills.length
+    skill is the property
+    length is a method
+  Using 'for in' to Loop Through an Object's Properties
+    for (var prop in student) {
+      console.log(prop, ': ', student[prop]);
+    }
+    have to use bracket notation!
+    can have whatever variable to call the properties: prop, key, thingie, whatever
+    remember to initialize or declare it using var
+  Mixing and Matching Arrays and Objects
+    array of objects?
+    change a 2d array to an array of objects, whose objects have properties
+  JSON: JavaScript Object Notation
+    websites exchange data using JSON
+    the data is formatted like a JS object!
+  The Build An Object Challenge, Part 1
+  The Build An Object Challenge, Part 1 Solution
+    var students = [];
+    /*** inside the array ***/
+    {
+      name: '',
+      track: '',
+      achievements: '',
+      points: ''
+    },
+  The Build an Object Challenge, Part 2
+  The Build an Object Challenge, Part 2 Solution
+    new program file *.js
+    var message = '';
+    var student;
+    function print(message) {
+      var outputDiv = document.getEletById('output');
+      outputDiv.innerHTML = message;
+    }
+    for () {
+    }
+    print(message);
+  The Student Record Search Challenge
+  The Student Record Search Challenge Solution
+    run through the for loop looking for a match between user input and a student name
+    if the name matches the current record, then print. otherwise keep searching

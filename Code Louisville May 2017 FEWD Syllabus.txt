@@ -1,0 +1,319 @@
+Front End Web Development Syllabus
+May 2017
+
+Summary of Requirements for Completion of Code Louisville
+The following is a list of the requirements for successfully completing Code Louisville.  If any of the items are not completed, you will be unable to continue with the program.  Please be sure to ask any questions of Code Louisville staff if you have any concerns about completing the requirements.  Each of these requirements will be explained in more detail during orientation and in your weekly meetups.
+
+1.	Complete all Treehouse courses listed in each week below.  This includes completing all quizzes and challenges, and earning all badges that Treehouse awards for completion. You will be added to the “Code Lou Front End May 2017” track which should contain all required courses for you to follow along with, or you can click the links in the document below to go directly to the courses.
+
+2.	Complete your personal project.  This project must be completed by Friday, July 21st at noon and must fulfill every requirement listed in the Project Requirements document.  The requirements and other Code Louisville information can be found on the Student Resources Wiki.  You should show your project to a mentor well before the due date to ensure requirements are properly met.
+
+3.	Attend a minimum of 2 tech events with groups around town.  Check http://louisville.io for a list of eligible events or check with Code Louisville staff if another event you’re interested in isn’t listed.  After completing the event, message @shannonsiders on Slack or email her and state which networking event you attended, and give a brief description of something you learned, someone you met, your overall thoughts, or something else you'd like to share.
+
+4.	Attend your weekly meetups.  You are highly encouraged to attend every single week, but more than 3 absences will result in being removed from the program.
+
+Week 0: Wednesday, April 26
+In-Person:
+★	Where: Louisville Free Public Library, 301 York Street, Louisville,
+KY 40202.  See parking info here.  Meters are free starting at
+6pm.
+★	When: 6:00 - 8:00 p.m. (probably will not last the full two hours).
+We’ll start right at 6, so please arrive early to find parking
+★	What to bring: Questions and something to take
+notes on (if you like).  No laptop required.
+★	No other in-person meetups this week!
+
+Treehouse:
+★	Review the pre-work courses as a refresher if needed:
+○	CSS Basics
+○	How to Make a Website
+○	JavaScript Basics
+
+★	Note: Treehouse videos each week should be completed by the end of the week (Sunday) in which they are assigned in order to remain on track.
+
+Week 1: Monday, May 1 - Sunday, May 7
+
+Assigned Treehouse Videos:
+★	HTML Forms
+★	CSS Layout Basics
+
+In-Person:
+★	First Meetups!
+○	Where: 252 East Market Street, Louisville, KY 40202.  Paid parking at meters (free after 6:00 p.m.!), beside Wild Eggs on Floyd Street, or anywhere in yellow on this parking map.
+○	For those who signed up for the Tuesday Indiana location, the address is:
+211 E Court Ave
+Jeffersonville, IN 47130
+
+Small Conference Room
+
+○	When: 6:00 - 8:00 p.m. on your assigned night
+○	What to bring: laptop and questions
+○	What we’ll do: We’ll start with an icebreaker then Code Louisville staff and mentors will talk about class structure, expectations, and requirements. We’ll answer any questions you have and introduce the coding project.
+
+Week 2: Monday, May 8 - Sunday, May 14
+Be sure to come each week with something to work on - we will not use all of class time for discussion, there will be time each week to ask questions and work on projects.
+
+Assigned Treehouse Videos:
+★	CSS Selectors
+★	JavaScript Loops, Arrays and Objects
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, Group coding project (first 30 minutes), topic of the week, and then we’ll help you tackle any questions you have from content you’ve seen so far.
+
+Week 3: Monday, May 15 - Sunday, May 21
+
+Assigned Treehouse Videos:
+★	jQuery Basics
+★	CSS Flexbox Layouts
+
+Project:
+★	Start thinking of ideas for what you want your final project to be.
+It could be creating a personal website/portfolio, recreating an
+already-existing site, the interface for an app, or any other idea
+you may have!
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, Networking discussion from our Student Success Coordinator, group coding project, then we’ll help you tackle any questions you have from content you’ve seen so far.
+
+Week 4: Monday, May 22 - Sunday, May 28
+
+Assigned Treehouse Videos:
+★	Console Foundations
+★	HTML Tables
+★	JavaScript and the DOM
+
+Project:
+★	Continue thinking of ideas for your project.  Start writing down
+features, ideas, or sketching it out on paper.  Talk to your
+mentors about your ideas.
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, group coding project (first 30 minutes), topic of the week, and then we’ll help you tackle any questions you have from content you’ve covered.
+
+Week 5: Monday, May 29 - Sunday, June 4
+** No MONDAY Meetup due to Memorial Day**
+Other nights meet as planned. Treehouse content is still assigned and Monday mentors will be asked to check in on Slack for any questions that come up.
+
+Assigned Treehouse Videos:
+★	Git Basics
+★	GitHub Basics
+
+GitHub
+★	Create your GitHub account if you haven’t already done so
+★	Create your first repository on GitHub and upload a project or code snippet you’ve written
+★	Brownie Points: Using only Git commands, create another repository and upload a project to it
+
+Project:
+★	You should have your project idea by now.  Continue to
+document features, plan out what it will look like.  Use class
+time to talk to mentors about your idea and verify it’s a good
+project to work on.
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, group coding project (first 30 minutes), topic of the week, and then we’ll help you tackle any questions you have from content you’ve seen so far.
+
+Week 6: Monday, June 5 - Sunday, June 11
+
+Assigned Treehouse Videos:
+★	HTML Video & Audio
+★	Responsive Layouts
+
+GitHub
+★	Continue to use GitHub regularly to store your projects
+★	Continue to practice with Git command line
+
+
+Project:
+★	Try and find some time to talk with a mentor about your project
+if you haven’t already, just to verify it’s appropriate size and
+difficulty for the course.  Start your development if you haven’t
+already!  Remind yourself of the project requirements on the
+Student Resources Wiki!
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, group coding project (first 30 minutes), topic of the week, and then we’ll help you tackle any questions you have from content you’ve seen so far.
+
+Week 7: Monday, June 12 - Sunday, June 18
+
+Assigned Treehouse Videos:
+★	AJAX Basics
+★	Object-Oriented JavaScript
+
+GitHub
+★	Continue to practice with Git
+★	Keep your project progress updated on GitHub
+
+Project:
+★	Keep working on your project!  Make sure to commit updates to
+GitHub regularly!  Don’t forget about the Student Resources
+Wiki!
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting. We may be wrapping up the group coding project by this point and moving more into time to work on your project.
+
+
+Week 8: Monday, June 19 - Sunday, June 25
+
+Assigned Treehouse Videos:
+★	Accessibility
+★	Website Optimization
+★	Front-end Performance Optimization
+★	Introduction to Design Patterns
+
+GitHub
+★	Continue to practice with Git
+★	Keep your project progress updated on GitHub
+
+Networking Reminder:
+★	Don’t forget you have to attend TWO networking events during the 12 weeks.  Check louisville.io for a good list of options and don’t forget to report to @shannon or shannon@codelouisville.org that you’ve gone!
+
+Project:
+★	Keep working on your project!  Make sure to commit updates to
+GitHub regularly!  Don’t forget about the Student Resources
+Wiki!
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, questions and working on your projects
+
+
+Week 9: Monday, May June 26 - Sunday, July 2
+
+Assigned Treehouse Videos:
+★	Framework Basics
+
+GitHub
+★	Continue to practice with Git
+★	Keep your project progress updated on GitHub
+
+
+Project:
+★	Keep working on your project!  Make sure to commit updates to
+GitHub regularly!  Don’t forget about the Student Resources
+Wiki!  Project is due in 3 weeks!
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop, have previous weeks’ assigned Treehouse videos done, and any questions you have!
+○	What we’ll do: Stand Up meeting, questions and working on your projects
+
+
+Week 10: Monday, July 3 - Sunday, July 9
+** No TUESDAY Meetup due to Independence Day **
+Other nights meet as planned. Treehouse content is still assigned and Tuesday mentors will be asked to check in on Slack for any questions that come up.
+
+RECOMMENDED Treehouse Videos:
+★	Angular Basics (optional)
+★	Sass Basics (optional)
+★	These two courses are recommended but optional.  Angular Basics
+introduces you to Angular2, a powerful front-end framework that is in high demand in the job market currently.  Sass is an extension to CSS and offers more features with your style sheets.  These courses will not show up in your Treehouse track, as they are optional, but you are highly encouraged to complete them.
+
+GitHub
+★	Continue to practice with Git
+★	Keep your project progress updated on GitHub
+
+Networking:
+★	Don’t forget you have to attend TWO networking events during the 12 weeks.  Check louisville.io for a good list of options!
+
+Project:
+★	Your project is due in TWO WEEKS!  Keep working on your
+project!  Make sure to commit updates to GitHub regularly and show it off to your mentors.
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop and questions
+○	What we’ll do: Stand up meeting.  We’ll help you tackle any questions you have from content you’ve seen so far.
+
+Week 11: Monday, July 10 - Sunday, July 16
+
+Treehouse:
+★	No new assignments.  Use this time to review any previous videos you didn’t fully understand and to work on your project!  Remember, your projects are going to be the main tool you use to land a job!
+
+GitHub:
+★	Continue to practice with Git
+★	Keep your project progress updated on GitHub
+
+
+Project:
+★	You should be wrapping up most of your development and now
+completing final details and testing.
+
+In-Person:
+★	Meetups
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop and questions
+○	What we’ll do: Stand Up meeting, we’ll help you tackle any questions you have from content you’ve seen so far.
+
+Projects:
+★	Double check the project requirements! Ask a mentor to confirm you’ve got a project that meets them
+○	These can be found on the Student Resources Wiki.
+★	Remember, your projects on GitHub are your number one tool for getting a job!
+
+Week 12: Monday, July 17 - Friday, July 21
+
+Treehouse:
+★	No new assignments.  Use this time to review any topics and finalize your project!
+
+Projects:
+★	Your project is due on GitHub *no later than Friday, July 21 at noon sharp!* There will be a survey posted on Slack that you must submit in order to “turn-in” your project.
+
+Do some final testing, preferably with another student, before finalizing your project!
+
+Revisit the project requirements on the Student Resources Wiki.
+
+In-Person:
+★	Meetups (Last week of meetups, and project due Friday at noon!)
+○	Where: Your assigned meetup location
+○	When: 6:00 - 8:00 p.m.
+○	What to bring: laptop and questions
+○	What we’ll do: Stand Up meeting, announcements about next sessions, then time to work together and finalize your project
+Post Graduation:
+Job Hunt Workshops!
+Dates will be announced closer to the end of the session but will be offered in the weeks following graduation.
+
+In-Person:
+★	Workshops (Required if you want to be in the Graduate Directory)
+○	Where: Code Louisville
+○	When: Varying times will be offered to accommodate your schedules
+○	What to bring: laptop, current digital resume, and have a LinkedIn account set up
+○	What we’ll do: Teach you everything we know based on techniques that actually work to support your job hunt!
+
+In-person Reviews with Student Success Coordinator, Shannon Siders
+Dates will be announced closer to the end of the session but will be offered in the weeks following graduation.
+
+★	1 on 1 Review (Optional, but highly valuable and encouraged!)
+○	Where: Code Louisville
+○	When: In the weeks following your job hunt seminar, you will have an option for an hour-long one-on-one meeting, with varying times offered to accommodate your schedules.
+○	What to bring: You will receive this information along with the registration e-mail. We will go over your resume, a sample cover letter, and LinkedIn profile.
+○	What we’ll do: A brief review and recommendations for your job hunt materials, some interview questions, and next steps in your learning and career path.

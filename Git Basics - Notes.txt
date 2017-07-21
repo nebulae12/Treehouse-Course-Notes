@@ -1,0 +1,96 @@
+Course: Git Basics
+
+Achievement: Why Version Control Matters
+	Introduction to Git Basics
+	Life Without Version Control
+	The Cowboy Coder's Code Corral
+	How Version Control Works
+	Why Git?
+	Version Control Review
+	Extra Credit:
+		Other Version Control Systems
+		I Thought Cowboys Were Heroes?
+		Even More Reasons to Use Version Control
+
+Achievement: Getting Started with Git
+	Git Ready
+		git-scm.com
+	Working With Git Repositories
+		git init - !!!! yahhhhh we're in business
+		git add [file]
+		git commit
+	Repository Basics
+	Committing Changes
+		git commit -a -m "comment here"
+	Commitment Therapy
+	The Staging Area
+		git status - status since last commit!
+	Staging Our Changes
+	Looking Back on What We've Done
+		git log
+	An Old-Fashioned Git-Together
+	Extra Credit:
+		Even More Control (man git-add)
+		Is the Staging Area Worth the Effort?
+		Git Configuration
+
+Achievement: Branches
+	Branching Out
+	Beginning to Branch
+		git branch
+		git checkout [branch name]
+		combine: git checkout -b [newbranchname]
+		as always git status, git log
+	Out on a Branch
+	Managing Our Branches
+		git branch -D - TO DELETE A BRANCH!
+	Branch Manager
+	Extra Credit:
+		The Versatility of the "git branch" Command
+
+Achievement: Merging
+	Introduction to Merging
+	Basic Merging
+	Simple Merges
+	Merge Conflicts
+		<<<<<<<< HEAD
+		thing
+		=================
+		thing
+		>>>>>>>>> branch
+	Conflict Resolution
+	Extra Credit:
+		Merge Commits: Waste of Space? (Rebasing)
+		Selfish Merging
+		Other Merging Tactics
+
+Achievement: Working with Remote Repositories
+	Working With Remotes
+	Remote Concepts
+	Cloning
+		git remote - lists remote repositories
+		git clone [address] [name]
+		git remote add [name] [address]
+	Pushing and Pulling
+		git clone
+	Remote Work
+	GitHub
+		github.com
+		gmail, g
+		git remote add origin [github address]
+		git push -u origin master
+	Hosting Help
+	Extra Credit:
+		Share Your Work
+		Become an Open Source Contributor
+
+Achievement: Workflows
+	A Day in the Life of a Git Project
+	Workflow Puzzles
+	Git-Flow
+		try it?
+	Using Git-Flow
+	Extra Credit:
+		Find a Workflow that Works for You
+		Use What You've Learned
+		Try Out Other Interfaces for Git

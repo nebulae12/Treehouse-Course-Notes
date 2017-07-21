@@ -1,0 +1,477 @@
+Course: jQuery Basics
+help: jquery api
+
+Achievement: Introduction to jQuery
+  jQuery Basics Overview
+    JavaScript and programming prereqs
+  Why jQuery? A Brief History of Front-end Development
+    HTML bloated with styles
+    CSS: one place for layouts and styles
+    HTML bloated with JavaScript, for interactivity and behavior
+    jQuery's dominance from using the same selectors as for CSS
+  What is Unobtrusive JavaScript?
+    putting the user first and making functional website across different browsers, devices, and connection
+    obtrusive JavaScript gets in the user's way
+    unobtrusive JavaScript doesn't discriminate among users - all should access your content and functionality
+  What is jQuery?
+    JavaScript library: a collection of JavaScript code
+    api.jquery.com for documentation
+    .hide()
+    hide the matched elements
+    .show()
+    code examples at the bottom
+    jQuery() or $() dollar sign shorthand
+    method chaining
+    $(".warning").hide().show("slow");
+    jQuery is JavaScript code that takes text as parameter and returns the selector you want and then you can do methods to it
+  CHALLENGE: Hiding and Showing Elements with jQuery
+  What is the DOM?
+    tree like structure of nodes
+    DOM: Document Object Model
+    top down rather than traditional tree
+    control shift j in chrome for dev tools
+    document.head.children returns an array of the tags that are the children of head
+    document.body.children[0] the first of the array
+    traversing the DOM
+    document.getElementsByClassName("warning")
+    no dot needed bc the method expects a class already
+    these methods may not work in older browsers, but jQuery does
+    easier to manipulate the DOM using jQuery than straight JavaScript
+  jQuery Documentation: What Does it Mean?
+    Manipulating the DOM
+    Traversing the DOM
+    Event Methods
+  Ways to Include jQuery in a Project
+    jQuery CDN: content delivery network
+  CHALLENGE: Include jQuery in a Project
+Achievement: Creating a Spoiler Revealer
+  Preparation
+    4P's: preparation, plan, perform, perfect
+
+Achievement: Creating a Spoiler Revealer
+  Prep
+  Plan
+    pseudo code
+    1, Hide spoiler
+    2, Add a button
+    3, When button pressed
+      3.1, Show spoiler
+      3.2, Get rid of button
+  Perform, Parts 1, 2, and 3
+    //1, Hide spoiler
+    $(".spoiler span").hide
+    //2, Add a button
+    $(".spoiler").append("<button>Reveal Spoiler!</button>")
+    //3, When button pressed
+      //3.1, Show spoiler
+      //3.2, Get rid of button
+      //$(".spoiler button") works
+      $("button").click(function(){
+          $(".spoiler span").show();
+          $(this).remove();
+        }
+      );
+  Perfect
+    //1, Hide spoiler
+    $(".spoiler span").hide
+    //2, Add a button
+    $(".spoiler").append("<button>Reveal Spoiler!</button>")
+    //3, When button pressed
+      //3.1, Show ONLY THIS SPOILER
+      //3.2, Get rid of button
+      //$(".spoiler button") works
+      $("button").click(function(){
+          $(this).prev().show();
+          $(this).remove();
+        }
+      );
+
+Achievement: Creating a Simple Lightbox
+  Plan
+  Prepare
+  Perform 1
+  Preventing the Default Behavior and Using attr()
+  Perform 2
+  Creating and Appending Detached DOM elements
+  Perform 3
+  Adding New Atrribute Values with attr()
+  Perform 4
+  A Better Caption
+  Perfect
+  Fixing the Simple Lightbox
+
+    //Problem: User when clicking on image goes to a dead end
+    //Solution: Create an overlay with the large image - lightbox
+
+    var $overlay = $('<div id="overlay"></div>');
+    var $image = $("<img>")
+
+    //An image to overlay
+    $overlay.append($image);
+
+    //Add overlay
+    $("body").append($overlay);
+      //A caption
+
+    //Capture the click event on a link to an image
+    $("#imageGallery a").click(function(event) {
+      event.preventDefault();
+
+      var imageLocation = $(this).attr("href");
+
+      //Update overlay with the image linked in the link
+      $image.attr("src", imageLocation);
+
+      //Show the overlay.
+      $overlay.show();
+
+      //Get child's alt attribute and set caption
+    });
+
+    //When overlay is clicked
+      //Hide the overlay
+      $overlay.click(function(){
+        $overlay.hide();
+
+      })
+
+    CSS file: style.css
+    #overlay {
+      background:rgba(0,0,0,0.7);
+      width:100%;
+      height:100%;
+      position:absolute:
+      top:0;
+      left:0;
+      display:none;
+      text-align:center;
+    }
+
+    #overlay img {
+      margin-top:10%;
+
+    }
+
+Achievement: Creating a Mobile Drop Down Menu
+   Prepare, Plan, Perform, Perfect
+     //Problem: It looks gross in smaller browser widths and small devices
+     //Solution: To hide the text links and swap them out with a more appropriate navigation
+
+     //Create a select and append to #menu
+     //Cycle over menu links
+      //Create an option
+      //option's value is the href
+      //option's text is the text of link
+      //append option to select
+    //Create button
+    //Bind click to button
+      //Go to select's location
+    //Modify CSS to hide links on small width and show button and select
+      //Also hides select and button on larger width and show's links
+    //Deal with selected options depending on current page
+
+  With Code
+    //Problem: It looks gross in smaller browser widths and small devices
+    //Solution: To hide the text links and swap them out with a more appropriate navigation
+
+    //Create a select and append to #menu
+    var $select = $("<select></select>");
+    $("#menu").append($select);
+
+    //Cycle over menu links
+    $("#menu a").each(function(){
+      var $anchor = $(this);
+      var $option = $("<option></option>")
+
+     //Create an option
+     //option's value is the href
+     $option.val($anchor.attr("href"))
+
+     //Deal with selected options depending on current page
+     if($ancor.parent().hasClass("selected")) {
+      $option.prop("selected", true);
+     }
+
+     //option's text is the text of link
+     $option.text($anchor.text());
+     //append option to select
+     $select.append($option);
+     })
+
+   //Create button
+   var $button = $("button>Go</button>");
+   $("#menu").append($button);
+   //Bind click to button
+   $button.click(function(){
+     //Go to select's location
+     window.location = $select.val();
+   });
+
+   //Modify CSS to hide links on small width and show button and select
+     //Also hides select and button on larger width and show's links
+
+
+
+
+   Stylesheet
+   /** Start Coding Here **/
+   /**
+   Modify CSS to hide links on small width and show button and select
+   Also hides select and button on larger width and show's links
+   **/
+
+    @media (min-width: 320px) and (max-width: 568px) {
+      #menu ul {
+      display:none;
+      }
+    }
+
+    @media (min-width: 568px) {
+      #menu select, #menu buttom {
+        display:none;
+      }
+    }
+
+    Get rid of the button! says mobile users
+
+    //delete:
+    //Create button
+    //var $button = $("button>Go</button>");
+    //$("#menu").append($button);
+    //Bind click to button
+    //$button.click(function(){
+      //Go to select's location
+      //window.location = $select.val();
+    //});
+
+    //replace with:
+    //Bind change listener to the select
+    $select.change(function() {
+      //Go to select's location
+      window.location = $select.val();
+    });
+
+Achievement: Creating a Password Confirmation Form
+    Prepare, Plan, Perform, Perfect
+    //Problem: Hints are shown even when form is valid
+    //Solution: Hide and show them at appropriate times
+
+    //Hide hints
+
+    //When event happens on password input
+      //Find out if password is valid
+        //Hide hint if valid
+        //else show hint
+
+    //When event happens on confirmation input
+      //Find out if password and confirmation match
+        //Hide hint if match
+        //else show hint
+
+
+
+    With Code
+    //Problem: Hints are shown even when form is valid
+    //Solution: Hide and show them at appropriate times
+    var $password = $("#password");
+    var $confirmPassword = $("#confirm_password");
+
+    //Hide hints
+    $("form span").hide();
+
+    function passwordEvent(){
+      //Find out if password is valid
+      if($password.val().length > 8){
+        //Hide hint if valid
+        $password.next().hide();
+      } else {
+        //else show hint
+        $password.next().show();
+    }
+
+    function confirmPasswordEvent() {
+      //Find out if password and confirmation match
+      if($password.val() === $confirmPassword.val()) {
+        //Hide hint if match
+        $confirmPassword.next().hide();
+      } else {
+        //else show hint
+        $confirmPassword.next().show();
+      }
+    }
+
+    //When event happens on password input
+    $password.focus(passwordEvent).keyup(passwordEvent).focus(confirmPasswordEvent).keyup(confirmPasswordEvent);
+
+    //When event happens on confirmation input
+    $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent);
+
+
+    Perfect the Code
+    //Problem: Hints are shown even when form is valid
+    //Solution: Hide and show them at appropriate times
+
+    //Hide hints
+
+    //When event happens on password input
+      //Find out if password is valid
+        //Hide hint if valid
+        //else show hint
+
+    //When event happens on confirmation input
+      //Find out if password and confirmation match
+        //Hide hint if match
+        //else show hint
+
+
+
+    Perfect!
+    //Problem: Hints are shown even when form is valid
+    //Solution: Hide and show them at appropriate times
+    var $password = $("#password");
+    var $confirmPassword = $("#confirm_password");
+
+    //Hide hints
+    $("form span").hide();
+
+    function isPasswordValid() {
+      return $password.val().length > 8;
+    }
+
+    function arePasswordsMatching() {
+      return $password.val() === $confirmPassword.val();
+    }
+
+    function canSubmit() {
+      return isPasswordValid() && arePasswordsMatching();
+    }
+
+    function passwordEvent(){
+      //Find out if password is valid
+      if(isPasswordValid){
+        //Hide hint if valid
+        $password.next().hide();
+      } else {
+        //else show hint
+        $password.next().show();
+    }
+
+    function confirmPasswordEvent() {
+      //Find out if password and confirmation match
+      if(arePasswordsMatching) {
+        //Hide hint if match
+        $confirmPassword.next().hide();
+      } else {
+        //else show hint
+        $confirmPassword.next().show();
+      }
+    }
+
+    function enableSubmitEvent() {
+      $("#submit").prop("disable", !canSubmit());
+    }
+
+    //When event happens on password input
+    $password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+    //When event happens on confirmation input
+    $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+    enableSubmitEvent();
+
+
+Achievement: Creating a Simple Drawing Application
+  Prepare, Plan, Perform, Perfect
+  //Problem: no user interaction causes no change to application
+  //Solution: When user interacts cause changes appropriately
+
+  //When clicking on control list itmes
+    //Deselect silbing elements
+    //Select the clicked element
+
+  //When new color is pressed
+    //Show or hide the color selector (sliders)
+
+  //When color sliders change
+    //update the new color span
+
+  //When add color is pressed
+    //Append the color to the controls ui
+    //Select the new color
+
+  //On mouse events on the canvas
+    //Draw lines
+
+
+
+  With Code
+  //Problem: no user interaction causes no change to application
+  //Solution: When user interacts cause changes appropriately
+
+  var color = $(".selected.css("background-color");
+  var $canvas = $("canvas");
+  //document.getElementsByTagName("canvas")[0]
+  //above js equiv to jquery below
+  //gets first element in an array of canvas elements
+  var context = $canvas[0].getContext("2d");
+  var lastEvent;
+  var mouseDown = false;
+
+  //When clicking on control list items
+  $(".controls").on("click","li",function() {
+    //Deselect sibling elements
+    $(this).siblings().removeClass("selected");
+    //Select the clicked element
+    $(this).addClass("selected");
+    //cache current color
+    color = $(this).css("background-color");
+  });
+
+  //When "New Color" is pressed
+  $("#revealColorSelect").click(function() {
+    //Show or hide the color selector (sliders)
+    changeColor();
+    $("#colorSelect").toggle();
+  });
+
+  //update the new color span
+  function changeColor() {
+    var r = $("#red").val();
+    var g = $("#green").val();
+    var b = $("#blue").val();
+
+    $("#newColor").css("background-color", "rgb("+"r"+","+"g"+","+"b"+")");
+  }
+
+  //When color sliders change
+  $("input[type=range]").change(changeColor);
+
+
+  //When "Add Color" is pressed
+  $("#addNewColor").click(function() {
+    //Append the color to the controls ui
+    var $newColor = $("<li></li>")
+    $newColor.css("background-color", $("#newColor").css("background-color"));
+    $(".controls ul").append($newColor);
+    //Select the new color
+    $newColor.click();
+  });
+
+  //On mouse events on the canvas
+  $canvas.mousedown(function(e) {
+    lastEvent = e;
+    mouseDown = true;
+  }).mousemove(function(e) {
+    //Draw lines
+    if(mouseDown)
+    context.beginPath();
+    context.moveTo(lastEvent.offsetX, lastEvent.offsetY);
+    context.lineTo(e.offsetX, e.offsetY);
+    context.strokeStyle = color;
+    context.stroke();
+    lastEvent = e;
+  }).mouseup(function() {
+    mouseDown = false;
+  }).mouseleave(function() {
+    $canvas.mouseup();
+  });

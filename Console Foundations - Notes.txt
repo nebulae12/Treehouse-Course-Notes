@@ -1,0 +1,123 @@
+Course: Console Foundations
+
+Achievement: Getting Started with the Console
+	Introduction
+		GNU/Linux, Unix, Darwin
+		POSIX: portable operating system interface
+		Windows is not POSIX
+		.net for Windows
+	Running Commands
+		ls - list
+		ls -l (long)
+		ls -a (all)
+		ls /(some other directory)
+	Moving Around the Filesystem
+		directory: a folder address
+		pwd (print working directory)
+		~ is the home path or directory
+		cd (change directory)
+		tab completion - the shell that understands the filesystem and is handling our keystrokes can fill in what directory we might be looking for
+		~ relative to the current directory or home directory
+		/ absolute path
+		.. up a folder
+	Reading Files
+		less - a program, modeled after more
+		q - quit out of the program
+		cat - used to concatenate files but can be used to view whole file in the console rather than in pager view with less or more
+	Editing Files
+		nano - to edit
+		^ ctrl key
+		emacs or vim to edit, extremely powerful but more work to learn
+	Moving and Deleting Files
+		mv - move (can rename files this way. takes two arguments, from and to file names)
+		cp - copy
+		rm - remove
+		-r to indicate we are sure about removing all directories inside a directory we are removing
+		mkdir - make a directory
+		-p to make all nested directories rather than make them one level at a time
+		. - current working directory
+		.. - one level up from current working directory
+
+Achievement: Users and Permissions
+	Creating Users
+		sudo adduser
+		whoami
+	File Permissions
+		rwx - read, write, and execute
+		ugo - user and group (and other)
+		file info: drwxrwxrwx
+			directory, rwx for each of ugo
+		chmod [ugo][+-][rwx]
+		octal representation
+	File Ownership
+		sudo chown
+		: (for group)
+	Sudo
+		root user can override any permissions
+		sudo (super user?)
+		sudo lets authorized users operate as root user - it asks for verification of the authorized users, not for the root user's verification
+		!! - the most recent command, displays it and runs it
+
+Achievement: Processes
+	Processes
+		top - program like task manager, displays processes running
+		ps aux | grep '[pattern]'
+	Pausing and Resuming
+		jobs are processes that belong to the user
+		ctrl-z to pause a process (gives it a job #)
+		fg - foreground a process (the last job one you paused)
+		jobs - prints jobs
+		& - send a process to bg immediately
+	Killing Processes
+		TERM - signal to a process that stops it (kills it)
+		kill [id num]
+		-KILL -9
+
+Achievement: Environment and Redirection
+	Environment Variables
+		HOME, PATH, PS1
+		env - displays environment variables (CAP name and then value)
+		echo $[variable]
+		$[variable]
+		to set, don't use $
+		to expand, do use $
+		bash - a new... environment
+		exit - to exit instance of bash
+		which - print location of program
+	Find and Grep
+		find - locate a file by name
+		find . -name "[filename]"
+		grep - search inside a file for a pattern (global regular expression print)
+		grep "[pattern]" [file]
+		grep -n - prints the line number pattern is found on
+		grep -i - case-insensitive search
+		grep -v - search for lines without pattern
+		man [command] - for info on the command
+	Pipes and Redirection
+		standard in and standard out
+		piping - output of one process as input of another process
+		[process] < [file] - changes the input, takes input from file
+		the standard input is the console input
+		the standard input is the console output
+		[process] > [file] - changes the output, writes output to file (overwrite)
+		>> - appends output to file
+		2> [file] - redirect the standard error strem to file
+		/dev/null - special file that deletes anything written into it
+		Command A | Command B - pipe the output of A to input of B
+		sort - a command that sorts output display
+
+Achievement: Installing Software
+	Building Software From Source
+		which, curl
+		build-essential
+		configure
+		make
+		makefile
+		sudo make install
+	Introduction to Package Managers
+		apt - Ubuntu Linux
+		sudo apt-get update
+		sudo apt-get install git
+		sudo apt-cache search [pattern]
+		sudo apt-get upgrade
+		sudo apt-get remove [package] - to uninstall
