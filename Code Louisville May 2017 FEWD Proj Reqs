@@ -1,0 +1,53 @@
+Project Deadline: Push your final project to GitHub no later than Friday, July 21st by noon!
+Front End Web Development
+Check out some answers to your frequently asked questions (FAQs), here.
+
+The purpose of the capstone project is to reinforce what you’ve learned and show off your skills. Your projects will be your go-to tool to show off to potential employers and demonstrate you know what you’re talking about. Pick an idea that is fun, challenging, and hopefully useful, too!
+
+Create a website that demonstrates your knowledge of the Front-end development skills you’ve been learning. This application can be anything of your choosing as long as it demonstrates the below principles and requirements. Your project does not need to be “complete” in that it doesn’t need to be a fully-functioning, finalized project ready to be launched. It can be a small, basic site that only has a few features. It can even have incomplete features, so long as it still meets all the below requirements. The important point is that you demonstrate good coding practices and the major platforms you learned in the course.
+Requirements:
+
+The below items are the requirements for your personal project for Code Louisville. Projects are graded on a pass/fail system, thus every required bullet must be met in order for your project to pass. You should discuss your project/plan with mentors in advance to verify that it will meet the requirements, but also to make sure you don't try and tackle too large of a project for this class. The requirements are:
+
+    Your project is responsive to different devices and/or browser sizes or screen resolutions.
+        As the browser is resized, your site should alter elements on the page to improve the display. The two most common methods to accomplish this is either
+            CSS media queries that will change elements on your page above or below certain screen sizes
+            Use a framework (such as Bootstrap) to implement responsive design
+        A combination of the above two or other responsive options are also acceptable
+        You do not have to account for all possible devices and browser sizes, just demonstrate some responsive layout principles
+
+    Your project includes custom CSS that is applied to your HTML elements
+        Using ONLY Bootstrap for your customization does not fulfill this requirement
+        You are highly encouraged to use a variety of CSS styles to enrich your site
+
+    Your project includes custom JavaScript
+        You must include some form of JavaScript written by you, link it through your HTML page, and have the code execute in the browser
+        Using a JavaScript framework such as AJAX, Angular, or jQuery does meet this requirement (but is not the only way to do so)
+        Just importing/linking Bootstrap (or other framework) does not meet this requirement
+
+    Your project has some user interactivity
+        Only the most minimal interactivity is required to have a passing project
+        Some examples of ways to have user interactivity include (but are certainly not limited to):
+            A form or field the user fills out and submits (doesn't have to actually submit successfully)
+            An multi-layered menu the user has to click through
+            A picture carousel the user can switch images on by clicking buttons/bubbles
+            A lightbox that pops up a picture when the user clicks on a thumbnail
+            A button that has a prompt that says "This functionality not yet implemented" would even be sufficient
+
+    Your code has comments
+        Every line doesn’t need a comment, but major sections of your CSS, HTML, and/or JavaScript files should have some helpful comments so a reviewer can know what the major parts of your code do
+
+    Your project code is on your GitHub account in its own repository
+        If you choose to host your application on a live URL, GREAT! You can share that for demonstration purposes or ease of running - and this is encouraged! But your code must still be available on GitHub for review.
+
+    It must include a README file located at the top level directory of your project providing the following:
+        A brief description of your project’s purpose. Example: "A website for my local animal shelter. I tried to enhance their current site by implementing more responsive design and adding some jQuery functionality to create a Contact Me form." Try to think of what would be useful to a potential employer that is looking at your GitHub account without any context or background about Code Louisville or your project.
+        If your project requires anything special beyond "Open index.html", then your Readme must included detailed steps on how to view the website. Most front-end dev projects will not need this, but some projects may go beyond the basic requirements and require specific tools or setup to run. If your project does, be sure to include very detailed steps so a reviewer or an employer can successfully run your project. If you choose to host your site on a live URL or GitHub Pages, it is fine to list that URL instead.
+
+    You are highly encouraged to include a front-end framework such as AJAX, jQuery, or Angular in your project as a demonstration of your ability to utilize these. However, this is not a requirement of a passing project.
+
+    Have fun! Your project should be something you're proud of, and that adequately demonstrates your base knowledge in the concepts you've learned.
+
+Mentors
+
+You should talk about your project early with your mentors. Explain your idea and the features you are thinking of implementing. They will help you understand if it will meet the requirements or if you've possibly decided to tackle too large of a project for the 12-week time period. Towards the end of the session, you should again show your project to your mentors and get confirmation that it meets the requirements of the project.
